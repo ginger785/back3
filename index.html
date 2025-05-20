@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Задание 3</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h2>
+            Запускаем клиент и подключаемся к БД
+        </h2>
+        <img src="3.1.PNG">
+        <p>
+            Используем команду mysql -uu'login' -p'password' u'login'
+        </p>
+    
+        <h2>
+            Создаем 3 таблицы: application с основной информацией из анкеты, programming_language, в которой хранятся
+            языки программирования и их ID, application_language, связывающую application с programming_language
+        </h2>
+        <img src="3.2.PNG">
+        <p>
+            Для создания таблиц используем команду CREATE TABLE имя таблицы (параметры);<br>
+            Первичные ключи (ID) заполняются автоматически (AUTO-INCREMENT).
+        </p>
+
+        <h2>
+            Структура таблиц
+        </h2>
+        <img src="3.4.PNG">
+
+        <h2>
+            Вставляем в таблицу programming_language все языки программирования из формы
+        </h2>
+        <img src="3.3.PNG">
+        <p>
+            Для этого используем команду INSERT INTO имя таблицы (имена полей) VALUES (значения);
+        </p>
+    
+        <h2>
+            После отправки анкеты данные сохраняются в базу данных
+        </h2>
+        <img src="form results.jpg">
+    
+        <h2>
+            Их можно удалить командой DELETE
+        </h2>
+        <img src="deletion.jpg">
+    
+    </body>
+    
+    
